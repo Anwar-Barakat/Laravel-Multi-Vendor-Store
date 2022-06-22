@@ -1,7 +1,7 @@
 @extends('admin.layouts.master')
 
 
-@section('title', 'Dashboard')
+@section('title', __('translation.dasboard'))
 
 @section('content')
     <div class="content-body">

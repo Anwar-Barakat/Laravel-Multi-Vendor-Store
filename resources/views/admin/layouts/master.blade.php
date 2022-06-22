@@ -11,7 +11,6 @@
     <meta name="description" content="{{ __('translation.website_title') }}" />
     <meta property="og:title" content="{{ __('translation.website_title') }}" />
     <meta property="og:description" content="{{ __('translation.website_title') }}" />
-    <meta property="og:image" content="https://edumin.dexignlab.com/xhtml/social-image.png" />
     <meta name="format-detection" content="telephone=no">
 
 

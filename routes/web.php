@@ -24,7 +24,9 @@ Route::get('/dashboard', function () {
 
 require __DIR__ . '/auth.php';
 
-Route::group(['prefix' => '/admin/'], function () {
+Route::group(['prefix' => '/admin', 'as' => 'admin.'], function () {
 
-    Route::resource('dashboard', DashboardController::class);
+    Route::resource('dashboard',        DashboardController::class);
+    Route::get('login',                 [DashboardController::class, 'loginForm'])->name('login.form');
+    Route::post('login',                [DashboardController::class, 'login'])->name('login');
 });

@@ -82,4 +82,11 @@ class DashboardController extends Controller
     {
         //
     }
+
+    public function loginForm()
+    {
+        return view('admin.auth.login');
+    }
+
+    public function login(){}
 }
